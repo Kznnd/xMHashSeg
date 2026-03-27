@@ -1,0 +1,6 @@
+tabulate
+scikit-learn
+open3d
+yacs
+opencv-python==4.11.0.86
+xformers==0.0.22

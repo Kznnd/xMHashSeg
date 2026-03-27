@@ -1,0 +1,14 @@
+BMVC_INIT_VIEW: 2
+DATASET_TARGET:
+  TYPE: "SemanticKITTI"
+  TRAIN: ("train",)
+  TEST: ("test",)
+  SemanticKITTI:
+    preprocess_dir: "/data1/zjl/semantic_kitti/preprocess" # modify it
+    semantic_kitti_dir: "/data/xmw/semantic_kitti" # modify it
+DATALOADER:
+  NUM_WORKERS: 2
+VAL:
+  BATCH_SIZE: 1 # only support batch size with 1
+  PERIOD: 20
+OUTPUT_DIR: "output/skitti"

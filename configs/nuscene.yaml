@@ -1,0 +1,14 @@
+BMVC_INIT_VIEW: 0
+DATASET_TARGET:
+  TYPE: "NuScenesLidarSeg"
+  TRAIN: ("train_all",)
+  TEST: ("test_all",)
+  NuScenesLidarSeg:
+    preprocess_dir: "/data1/zjl/nuscenes/preprocess/preprocess" # modify it
+    nuscenes_dir: "/data/xmw/nuscenes"  # modify it
+DATALOADER:
+  NUM_WORKERS: 2
+VAL:
+  BATCH_SIZE: 1 # only support batch size with 1
+  PERIOD: 20
+OUTPUT_DIR: "output/nuscene"
