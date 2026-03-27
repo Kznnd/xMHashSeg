@@ -1,6 +1,6 @@
-# TfHashSeg: Training-Free Hash Learning for Multi-Modal LiDAR Segmentation
+# xMHashSeg: Cross-modal Hash Learning for Training-free Unsupervised LiDAR Semantic Segmentation
 
-Code of TfHashSeg.
+Code of xMHashSeg.
 
 ## Preparation
 
