@@ -1,17 +1,5 @@
 import torch
 
-# Reference
-# @article{zhang2019binary,
-#   title={Binary multi-view clustering},
-#   author={Zhang, Zheng and Liu, Li and Shen, Fumin and Shen, Heng Tao and Shao, Ling},
-#   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-#   volume={41},
-#   number={7},
-#   pages={1774--1782},
-#   year={2019},
-#   publisher={IEEE}
-# }
-
 def binary_multi_view_clustering(X, L=128, r=5, beta=0.003, gamma=0.01, lambda_=0.00001, init_view=0,
                                  MaxIter=5, anchor_dim=1000, n_cluster=6, innerMax=10, device='cpu'):
     """

@@ -1,5 +1,3 @@
-# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved.
-# Modified by Jiayuan Gu
 from __future__ import division
 from collections import defaultdict
 from collections import deque

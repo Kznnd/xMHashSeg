@@ -20,6 +20,8 @@ Install pointnet2\_ops for Point-SANN
 Install packages for other requirements
 
 > pip install -r requirements.txt
+> 
+> pip install -e .
 
 Readers also need to download the pre-trained model of [DAM](https://huggingface.co/depth-anything/Depth-Anything-V2-Large/resolve/main/depth_anything_v2_vitl.pth?download=true) and place it in DAM/metric\_depth/checkpoints folder.
 
@@ -51,11 +53,11 @@ Firstly, adjust the "preprocess\_dir" and "dataset\_dir" parameters in the confi
 
 Run the test code with:
 
-> \\# test nuScenes dataset 
+> \# test nuScenes dataset 
 > 
 > python -W ignore test.py --cfg=configs/nuscenes.yaml
 > 
-> \\# test SemanticKITTI dataset
+> \# test SemanticKITTI dataset
 > 
 > python -W ignore test.py --cfg=configs/semantickitti.yaml
 

@@ -1,5 +1,3 @@
-import sys
-sys.path.append('/mnt/d/phd/code/single_xMTF')
 import os
 import os.path as osp
 import numpy as np
@@ -160,8 +158,8 @@ def preprocess(nusc, split_names, root_dir, out_dir,
 
 
 if __name__ == '__main__':
-    root_dir = '/data/xmw/nuscenes' # modify it
-    out_dir = '/data1/zjl/nuscenes/preprocess' # modify it
+    root_dir = 'path to nuscenes' # modify it
+    out_dir = 'path to save preprocess' # modify it
     nusc = NuScenes(version='v1.0-trainval', dataroot=root_dir, verbose=True)
 
     preprocess(nusc, ['test'], root_dir, out_dir, subset_name='all')

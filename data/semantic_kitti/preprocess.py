@@ -1,6 +1,3 @@
-import sys
-
-sys.path.append("/mnt/d/phd/code/single_xMTF")
 import os
 import os.path as osp
 import numpy as np
@@ -185,6 +182,6 @@ def preprocess(split_name, root_dir, out_dir):
 
 
 if __name__ == '__main__':
-    root_dir = '/data/xmw/semantic_kitti' # modify it
-    out_dir = '/data1/zjl/semantic_kitti' # modify it
+    root_dir = 'path to nuscenes' # modify it
+    out_dir = 'path to save preprocess' # modify it
     preprocess('test', root_dir, out_dir)
